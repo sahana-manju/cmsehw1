@@ -3,7 +3,7 @@ import seaborn as sns
 import pandas as pd
 import seaborn as sd
 import matplotlib.pyplot as plt
-df=pd.read_csv('/Users/sahanamanjunath/Downloads/data.csv')
+df=pd.read_csv('data.csv')
  
 st.title('Wisconsin Breast Cancer Insights')
 st.caption('EDA by group 3')
@@ -14,7 +14,7 @@ st.divider()
 
  
 #new scatter plot able to select x and y axis with st.selectbox
-df_cancer = pd.read_csv('/Users/sahanamanjunath/Downloads/data.csv')
+df_cancer = pd.read_csv('data.csv')
 st.subheader('Scatterplot with input widgets')
 x_axis = st.selectbox('Select x axis', df_cancer.columns)
 y_axis = st.selectbox('Select y axis', df_cancer.columns)
